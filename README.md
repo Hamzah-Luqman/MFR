@@ -11,10 +11,12 @@ robustness of the proposed model for recognizing masked faces.
 Three main models have been proposed in this work:
 ## CNN models
 We proposed three CNN models fine-tuned on different pre-trained models (VGG16, EfficientNet, FaceNet).  
+
 ![Alt text](cnn_models.png?raw=true)
 
 ## Transformer 
 We also proposed a Transformer model for masked face recognition that uses only the encoder component. 
+
 ![Alt text](transformer.png?raw=true)
 
 ## Ensemble model
@@ -23,24 +25,16 @@ Two approaches are used in this work for ensemble learning. The first method inv
 
 # Dataset and models
 Please follow this link to download the dataset and the trained models. 
+
 https://drive.google.com/drive/folders/1uiTAWdU2DMyy27j3H6BPnLCiQvFRH5nD
 
 
 # Results
-\begin{table}[H]
-\centering
-\footnotesize
-\caption{The accuracies of the proposed models.}
-\label{tab:results}
-\setlength{\tabcolsep}{12pt}
-\begin{tabular}{@{}lll@{}}
-\toprule
-Model       &   Top-1 Accuracy     &   Top-5 Accuracy       \\ \midrule
-CNN-VGG16 &    73.38\%    &  82.05\%      \\
-CNN-EfficientNet     &   79.61\%   &  84.41\%        \\
-CNN-FaceNet       &     80.30\%    &   85.24\%    \\
-Transformer      &       69.04\%  &   78.70\%  \\
-Ensemble Learning  &  \textbf{92.01\%} & \textbf{96.57\%} \\ 
-\bottomrule
-\end{tabular}
-\end{table} 
+
+| Model | Top-1 Accuracy | Top-5 Accuracy
+| -- | -- | -- |
+CNN-VGG16 | 73.38% | 82.05% |
+CNN-EfficientNet | 79.61% | 84.41% |
+CNN-FaceNet | 80.30% | 85.24% |
+Transformer | 69.04% | 78.70% |
+Ensemble Learning | **92.01%** | **96.57%** |
