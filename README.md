@@ -15,7 +15,7 @@ We proposed three CNN models fine-tuned on different pre-trained models (VGG16, 
 
 ## Transformer 
 We also proposed a Transformer model for masked face recognition that uses only the encoder component. 
-![Alt text](ensemble.png?raw=true)
+![Alt text](transformer.png?raw=true)
 
 ## Ensemble model
 Two approaches are used in this work for ensemble learning. The first method involves using different validation sets for each model. This method helps in overcoming the overfitting problem of the involved models. The second method is to ensemble different models with different configurations.  This helps in employing the capabilities of these models for masked face identification. In addition, combining multiple models’ predictions can reduce the variance of the resulting ensembled model. 
@@ -25,3 +25,22 @@ Two approaches are used in this work for ensemble learning. The first method inv
 Please follow this link to download the dataset and the trained models. 
 https://drive.google.com/drive/folders/1uiTAWdU2DMyy27j3H6BPnLCiQvFRH5nD
 
+
+# Results
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{The accuracies of the proposed models.}
+\label{tab:results}
+\setlength{\tabcolsep}{12pt}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Model       &   Top-1 Accuracy     &   Top-5 Accuracy       \\ \midrule
+CNN-VGG16 &    73.38\%    &  82.05\%      \\
+CNN-EfficientNet     &   79.61\%   &  84.41\%        \\
+CNN-FaceNet       &     80.30\%    &   85.24\%    \\
+Transformer      &       69.04\%  &   78.70\%  \\
+Ensemble Learning  &  \textbf{92.01\%} & \textbf{96.57\%} \\ 
+\bottomrule
+\end{tabular}
+\end{table} 
