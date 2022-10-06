@@ -1,5 +1,5 @@
 # Masked Face Recognition.
-This repoistory will contain the code of the paper [**Ensemble Learning using Transformers and Convolutional Networks for Masked Face Recognition**] (https://arxiv.org/pdf/4529683.pdf)  
+This repoistory will contain the code of the paper **Ensemble Learning using Transformers and Convolutional Networks for Masked Face Recognition** 
 
 # Summary
 Wearing a face mask is one of the adjustments we had to follow to reduce the spread of the coronavirus. Having our faces covered by masks constantly has driven the need to understand and investigate how this behavior affects the recognition capability of face recognition systems. Current face recognition systems have extremely high accuracy when dealing with unconstrained general face recognition cases but do not generalize well with occluded masked faces. 
