@@ -7,7 +7,7 @@ In this work, we propose a system for masked face recognition. The proposed syst
 We ensemble the predictions of the four models using the majority voting technique to identify the person with the mask. The proposed system has been evaluated on a synthetically masked LFW dataset created in this work. The best accuracy is obtained using the ensembled models with an accuracy of 92\%. This recognition rate outperformed the accuracy of other models and it shows the correctness and
 robustness of the proposed model for recognizing masked faces.
 
-
+![Alt text](ensemble.png?raw=true)
 
 # Dataset and models
 Please follow this link to download the dataset and the trained models. 
