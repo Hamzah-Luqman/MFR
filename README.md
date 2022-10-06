@@ -7,6 +7,18 @@ In this work, we propose a system for masked face recognition. The proposed syst
 We ensemble the predictions of the four models using the majority voting technique to identify the person with the mask. The proposed system has been evaluated on a synthetically masked LFW dataset created in this work. The best accuracy is obtained using the ensembled models with an accuracy of 92\%. This recognition rate outperformed the accuracy of other models and it shows the correctness and
 robustness of the proposed model for recognizing masked faces.
 
+# Proposed models
+Three main models have been proposed in this work:
+## CNN models
+We proposed three CNN models fine-tuned on different pre-trained models (VGG16, EfficientNet, FaceNet).  
+![Alt text](cnn_models.png?raw=true)
+
+## Transformer 
+We also proposed a Transformer model for masked face recognition that uses only the encoder component. 
+![Alt text](ensemble.png?raw=true)
+
+## Ensemble model
+Two approaches are used in this work for ensemble learning. The first method involves using different validation sets for each model. This method helps in overcoming the overfitting problem of the involved models. The second method is to ensemble different models with different configurations.  This helps in employing the capabilities of these models for masked face identification. In addition, combining multiple models’ predictions can reduce the variance of the resulting ensembled model. 
 ![Alt text](ensemble.png?raw=true)
 
 # Dataset and models
